@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" class="h-100" xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="layout/header :: head ('글작성')"></head>
+
+<body>
+<br/>
+
+<div class="container">
+    <!-- search -->
+    <div class="row">
+        <div class="col-sm-6 col-md-8">
+            <input id="searchBox" style="height: 46px" class="form-control form-control-lg" type="text" placeholder="맛집을 검색해주세요 ex.(판교 갈비집)" value="갈비집">
+            <button id="searchButton" type="button" class="btn btn-primary btn-lg" style="width: 100%">검색</button>
+        </div>
+    </div>
+
+    <br/>
+    <!-- search result -->
+    <div class="row" id="search-result" style="visibility: hidden">
+        <div class="col-sm-6 col-md-4">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item" id="wish_title">{{search_result.title}}</li>
+                <li class="list-group-item" id="wish_category">{{search_result.category}}</li>
+                <li class="list-group-item" id="wish_address">{{search_result.address}}</li>
+                <li class="list-group-item" id="wish_road_address">{{search_result.roadAddress}}</li>
+                <li class="list-group-item"><a id="wish_link" target="_blank" href="search_result.homePageLink">홈페이지</a> </li>
+            </ul>
+        </div>
+    </div>
+<script th:src="@{/js/findFood.js}"></script>
+</body>
+</html>
