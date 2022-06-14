@@ -15,7 +15,6 @@ public class SearchFoodReq {
     private int display = 10;
     private int start = 1;
 
-
     public MultiValueMap<String, String> toMultiValueMap(){
         var map = new LinkedMultiValueMap<String, String>();
         map.add("query", query);
