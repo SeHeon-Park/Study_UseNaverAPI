@@ -1,6 +1,5 @@
 package spring.naverAPI.useAPI.food;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

@@ -1,6 +1,4 @@
 package spring.naverAPI.useAPI.naver;
-
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.RequestEntity;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Component;
@@ -8,7 +6,6 @@ import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;
 import spring.naverAPI.useAPI.naver.dto.SearchFoodReq;
 import spring.naverAPI.useAPI.naver.dto.SearchFoodRes;
-
 import java.net.URI;
 import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
